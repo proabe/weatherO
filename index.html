@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="weather-icons-master/css/weather-icons.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script type="text/javascript" src="assets/jquery-3.3.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/main.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner">
+    <div class="rect1"></div>
+    <div class="rect2"></div>
+    <div class="rect3"></div>
+    <div class="rect4"></div>
+    <div class="rect5"></div>
+    </div>  
+  </div>
+  
+  <div id="logo">Weather-O</div>
+	<div id="msg_contain"><span id="msg"></span></div>
+    <div id="main_con">
+    	<div id="con">
+    		<input type="text" name="input" placeholder="Enter City">
+        <i class="material-icons" id="search">search</i>
+    	</div>
+    	<div id="info">
+    		<div class="content container-fluid">
+      <div class="row">            
+      <div id="sunrise" class="col-lg-2">
+          <div id="ast">
+            <span class="head">Twilight</span>
+            <span>Sunrise</span>
+          <span>Sunset</span>  
+          </div>
+          <div id="units">
+            <span class="head">Units</span>
+            <span>Distance: km</span>
+            <span>Pressure: mb</span>
+            <span>Speed: km/h</span>
+            <span>Temperature: C</span>
+          </div>
+          
+      </div>
+
+       <div class="col-lg-8">
+         <span id="current">32<i class="wi wi-celsius"></i></span>
+         <span id="condition"><i class="wi wi-rain" id="cloud"></i> </span>
+         <span id="place"><i class="material-icons">location_on</i>Delhi</span>
+
+      </div>     
+      
+      <div class="col-lg-2">
+        <div id="wind">
+         <span class="head">Wind</span>
+          <span>Chill</span>
+          <span>Direction</span>
+          <span>Speed</span>  
+        </div>
+        <div id="atm">
+          <span class="head">Atmosphere</span>
+          <span>Humidity</span>
+          <span>Pressure</span>
+          <span>Visibility</span>          
+        </div>
+      </div>
+      
+      </div>
+  		
+  	</div>
+    <div class="container">
+      <div id="container">      
+      </div>
+    </div>
+    	
+    <div id="y">
+    <a href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/white.png" width="134" height="29"/> </a>
+    </div>
+    	</div>
+    </div>
+</body>
+</html>
